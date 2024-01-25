@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.views.generic import ListView
 from .models import *
 from .forms import *
@@ -26,4 +26,10 @@ def contact(request):
     if request.method == 'POST':
         if form.is_valid():
             form.save()
+            return redirect('thanks')
+
     return render(request, "contact.html",  {'form': form})
+
+
+def thanks(request):
+    return render(request,'thank.html')

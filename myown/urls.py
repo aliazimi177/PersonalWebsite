@@ -23,4 +23,6 @@ urlpatterns = [
     path("", index, name="index"),
     path("about",AboutMeView.as_view(), name="about"),
     path("contact", contact, name="contact"),
+    path("thanks/", thanks, name="thanks")
+
 ]
