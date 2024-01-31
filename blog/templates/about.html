@@ -1,6 +1,122 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            overflow: auto;
+        }
+        body::before, body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 2px;  /* Width of the line */
+    background-color: black; /* Color of the line */
+}
+
+body::before {
+    left: 0;
+}
+
+body::after {
+    right: 0;
+}
+
+    </style>
+    <title>Ali Azimi - About Me</title>
+</head>
+<body>
+<div class="container-fluid">
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+    <div>
+        <h1>Ali Azimi</h1>
+        <p><strong>Born:</strong> 2005</p>
+        <p><strong>Education:</strong> Studying at National Organization for Development of Exceptional Talents, Iran</p>
+        <p><strong>Contact:</strong> <a href="mailto:aliazimiali177@gmail.com">aliazimiali177@gmail.com</a> | <a href="https://aliazimi.github.io">GitHub</a></p>
+    </div>
+    </center>
+
+    <div>
+        <h2>Objective</h2>
+        <ul>
+        <p>With a keen interest in computer science, I am dedicated to excelling in the field, focusing on algorithms and their application in programming. Aiming to become a leading programmer or tech industry leader, my leadership skills, cultivated through sports and robotics team captaincies, equip me to lead and mentor effectively.</p>
+    </div>
+
+    <div>
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong>
+                <ul>
+                    <li>Python (Expert): Proficient in Flask, Django, and Pandas.</li>
+                    <li>C++: Skilled in object-oriented programming concepts.</li>
+                </ul>
+            </li>
+            <li><strong>Web Development:</strong>
+                <ul>
+                    <li>HTML & CSS: Experienced in creating responsive web designs.</li>
+                    <li>WordPress: Capable in developing and managing WordPress sites.</li>
+                    <li>Django: Skilled in developing applications using Django.</li>
+                    <li>Linux Servers: Proficient in working with and managing Linux servers.</li>
+                </ul>
+            </li>
+            <li><strong>Software Development:</strong>
+                <p>Experienced in full-stack development, versed in the software development lifecycle. Proficient in version control with Git and GitHub collaboration.</p>
+            </li>
+            <li><strong>Operating Systems & Tools:</strong>
+                <p>Linux & Docker: Proficient in Linux environments and Docker containerization, including administration and scripting.</p>
+            </li>
+            <li><strong>Robotics:</strong>
+                <p>In-depth experience in designing and programming robotic systems. Winner of the Iranian National Robotics Competition, showcasing advanced automation and design skills.</p>
+            </li>
+            <li><strong>Project Management:</strong>
+                <p>Proven leadership in guiding technical project teams.</p>
+            </li>
+            <li><strong>Other Technical Skills:</strong>
+                <p>Knowledgeable in Agile and Scrum methodologies. Skilled in troubleshooting and debugging complex software issues.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Extracurricular Activities</h2>
+        <ul>
+            <li><strong>Professional Soccer Player:</strong>
+                <ul>
+                    <li>Active in Tehran's Top Professional Soccer League.</li>
+                    <li>Team Captain, exhibiting leadership and strategic skills.</li>
+                    <li>Regular Starting Player, indicating skill and commitment.</li>
+                    <li>Recipient of multiple awards for talent and performance.</li>
+                    <li>Participant in national team drills, displaying top-tier skills.</li>
+                </ul>
+            </li>
+            <li><strong>Mentorship and Team Building:</strong>
+                <p>Key mentor to young players, fostering a positive and goal-focused team environment. Organizer of team activities and strategy sessions.</p>
+            </li>
+            <li><strong>Community Involvement:</strong>
+                <p>Involved in community outreach through soccer, promoting sportsmanship and teamwork. Engaged in charity matches and events for social impact.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Language Skills</h2>
+        <ul>
+            <li>English: Fluent</li>
+            <li>Persian: Native</li>
+        </ul>
+    </div>
 
 
+{% endblock content %}
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
      navActivePage();
@@ -20,6 +136,9 @@
   ga('send', 'pageview');
 </script>
 
---> <script type="text/javascript" src="./main.70a66962.js"></script></body>
 
+--> 
+</div>
+<script type="text/javascript" src="/js/main.70a66962.js"></script>
+</body>
 </html>

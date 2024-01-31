@@ -1,5 +1,7 @@
 from django.shortcuts import render,redirect
-from django.views.generic import ListView
+from django.views.generic import ListView,DetailView
+
+
 from .models import *
 from .forms import *
 # Create your views here.
@@ -9,6 +11,11 @@ class PostListView(ListView):
     model = Post
     template_name = 'works.html'
     context_object_name = "posts"
+
+
+class PostDetail(DetailView):
+    model = Post
+    template_name = 'work.html'
 
 
 def index(request):
