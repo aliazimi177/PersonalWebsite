@@ -1,2 +1,2 @@
 # PersonalWebsite
-A simple personal website to put my resume and staff
+A simple personal website to put my resume and stuff 
